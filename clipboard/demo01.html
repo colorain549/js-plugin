@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>点击 复制 用户输入的内容</title>
+</head>
+
+<body>
+    <h4>点击 复制 用户输入的内容</h4>
+    <!-- First, include the script located on the dist folder(从本地导入位于dist文件夹的脚本) -->
+    <script src="dist/clipboard.min.js"></script>
+    <script>
+        // Now, you need to instantiate it by passing a DOM selector, HTML element, or list of HTML elements(通过...实例化)
+        new ClipboardJS('.btn');
+    </script>
+    <!-- Target -->
+    <input id="foo" value="">
+    <!-- Trigger -->
+    <button class="btn" data-clipboard-target="#foo">点击复制</button>
+</body>
+
+</html>
